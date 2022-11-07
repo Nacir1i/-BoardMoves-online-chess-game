@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style-webgl.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>BoardMoves</title>
+    <link rel="icon" type="image/x-icon" href="sourcs/knight.ico">
+  </head>
+  <body style="text-align: center">
+    <div class="navBar">
+      <div class="logo">
+          <img src="/sourcs/knight.png">
+          <h1>Board <span>Moves</span></h1>
+      </div>
+      <ul class="navUl2">
+          <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+          <!-- <li><input type="text" placeholder="Search player" class="seachPlayer"></li> -->
+          <li><div class="userAvatar">
+            <img src="/sourcs/userAvatar.png" alt="#">
+            <p class="name"></p>
+          </div></li>
+      </ul>
+    </div>
+    <div class="mainGameContainer">
+      <canvas id="unity-canvas" width=960 height=600 style="width: 960px; height: 600px; background: #231F20"></canvas>
+    </div>
+    <script src="Build-pvb/webgl.loader.js"></script>
+    <script>
+      const logo = document.querySelector(".logo");
+
+      logo.addEventListener("click", () => {
+        location.href = "/";
+      });
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build-pvb/webgl.data.unityweb",
+        frameworkUrl: "Build-pvb/webgl.framework.js.unityweb",
+        codeUrl: "Build-pvb/webgl.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "DefaultCompany",
+        productName: "BoardMoves_BetaTest",
+        productVersion: "1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../style-webgl.css">
+    <link rel="stylesheet" href="../style.css">
+    <title>BoardMoves</title>
+    <link rel="icon" type="image/x-icon" href="sourcs/knight.ico">
+  </head>
+  <body>
+    <div class="navBar">
+      <div class="logo">
+          <img src="/sourcs/knight.png">
+          <h1>Board <span>Moves</span></h1>
+      </div>
+      <ul class="navUl2">
+          <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+          <!-- <li><input type="text" placeholder="Search player" class="seachPlayer"></li> -->
+          <li><div class="userAvatar">
+            <img src="/sourcs/userAvatar.png" alt="#">
+            <p class="name"></p>
+          </div></li>
+          <div class="logOutDiv">
+            <i class="fa-solid fa-power-off"></i>
+          </div>
+      </ul>
+    </div>
+    <div class="mainGameContainer">
+      <div class="console">
+        <p class="title">Server Logs :</p>
+        <div class="serverMessages"></div>
+        <p class="title">Chat :</p>
+        <div class="textBox"></div>
+        <div class="sendMessage">
+          <input type="text" class="input">
+          <button class="btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+      </div>
+      <div class="gameDiv">
+        <div class="GameOptions">
+          <p class="title white">Game Options :</p>
+          <div class="createJoin">
+            <div class="joinOptions">
+              <input type="text" class="join">
+              <button class="joinGame">Join game</button>
+            </div>
+            <button class="creatGame">Create game</button>
+          </div>
+        </div>
+        <canvas id="unity-canvas" class="unityCanvas" width=1500 height=1080></canvas>
+      </div>
+      <div class="console">
+        <p class="title">Game Logs :</p>
+        <div class="logs"></div>
+      </div>
+    </div>
+    <div class="endGamePopup">
+      <div class="winBanner hide">
+        <img src="../sourcs/winBanner.png" alt="#" class="banner">
+      </div>
+      <div class="lostBanner hide">
+        <img src="../sourcs/lostBanner.png" alt="#" class="banner">
+      </div>
+      <div class="drawBanner hide">
+        <img src="../sourcs/drawBanner.png" alt="#" class="banner">
+      </div>
+    </div>
+    <script src="Build/webgl.loader.js"></script>
+    <script src="Javascript/webgl.js"></script>
+    <script src="Javascript/index.js"></script>
+  </body>
+</html>

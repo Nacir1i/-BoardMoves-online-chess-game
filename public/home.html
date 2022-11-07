@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="sourcs/knight.ico">
+</head>
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <img src="sourcs/knight.png">
+            <h1>Board <span>Moves</span></h1>
+        </div>
+        <i class="fas fa-bars"></i>
+        <ul class="navUl2">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <!-- <li><input type="text" placeholder="Search player" class="seachPlayer"></li> -->
+            <li><div class="userAvatar">
+                <img src="sourcs/userAvatar.png" alt="#">
+                <p class="name">lolrandomXD</p>
+            </div></li>
+            <div class="logOutDiv">
+                <i class="fa-solid fa-power-off"></i>
+            </div>
+        </ul>
+    </div>
+    <div class="navContent hide">
+        <ul class="navUl">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <li><input type="text" placeholder="Search player" class="seachPlayer"></li>
+            <li><div class="userAvatar">
+                <img src="/sourcs/userAvatar.png" alt="#">
+                <p class="name">lolrandomXD</p>
+            </div></li>
+        </ul>
+    </div>
+    <div class="mainContent">
+        <div class="mainHeader">
+            <img src="/sourcs/chessGame.png" class="chessImg">
+            <div class="headerContent">
+                <div class="header">
+                    <p><span class="Board">Board <span class="Moves">Moves</span> :</span> A chess game where every moves counts, challenge your friend in it. Built in unity engine, coded in c#, with the ability to play online with a friend. Create an account and join your friend.</p>
+                </div>
+                <div class="currentPLayer">
+                    <h2>Current Players : <span class="usersCount">X</span></h2>
+                    <i class="fas fa-user-circle"></i>
+                </div>
+            </div>
+        </div>
+        <div class="playOptions">
+            <button class="pvp">
+                <img src="/sourcs/1v1.png" class="avatar">
+                <span>
+                    <label class="headerTitle">Play 1v1</label>
+                    <p>play against other players</p>
+                </span>
+            </button>
+            <button class="bot">
+                <img src="/sourcs/robot.png" class="avatar">
+                <span>
+                    <label class="headerTitle">Play solo</label>
+                    <p>play against computer</p>
+                </span>
+            </button>
+        </div>
+        <footer>
+            <div class="links">
+                <a href="">Help |</a>
+                <a href="">Why Join? |</a>
+                <a href="">About |</a>
+                <a href="">Devs |</a>
+                <a href="">BoardMoves.com |</a>
+                <p>© 2021</p>
+            </div>
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+            </div>
+        </footer>
+        <div class="loginPopUp hide">
+            <div class="loginDiv">
+                <h3>Login</h3>
+                <input type="text" placeholder="Username" class="userName">
+                <p class="usernameErrorLogin"></p>
+                <input type="text" placeholder="Password" class="Password">
+                <p class="passwordErrorLogin"></p>
+                <button class="logingBtn">submit</button>
+                <p>Or <a href="signUp.html">SIGN UP !</a> </p>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/main.js"></script>
+    <script src="Javascript/index.js"></script>
+    <script>
+        pvp.addEventListener("click", () => {
+            location.href = "/pvp";
+        });
+        bot.addEventListener("click", () => {
+            location.href = "/pvb";
+        });
+    </script>
+</body>
+</html>

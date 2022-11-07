@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style-profile.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="sourcs/knight.ico">
+</head>
+<body>
+    <div class="navBar">
+        <div class="logo">
+            <img src="sourcs/knight.png">
+            <h1>Board <span>Moves</span></h1>
+        </div>
+        <i class="fas fa-bars"></i>
+        <ul class="navUl2">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <!-- <li><input type="text" placeholder="Search player" class="seachPlayer"></li> -->
+            <li><div class="userAvatar">
+                <img src="sourcs/userAvatar.png" alt="#">
+                <p class="name">lolrandomXD</p>
+            </div></li>
+            <div class="logOutDiv">
+                <i class="fa-solid fa-power-off"></i>
+            </div>
+        </ul>
+    </div>
+    <div class="navContent hide">
+        <ul class="navUl">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <li><input type="text" placeholder="Search player" class="seachPlayer"></li>
+            <li><div class="userAvatar">
+                <img src="sourcs/userAvatar.png" alt="#">
+                <p class="name">lolrandomXD</p>
+            </div></li>
+        </ul>
+    </div>
+    <div class="mainProfileContainer flexCenter">
+        <div class="upperContainer">
+            <div class="accountInfo flexCenter">
+                <img src="sourcs/pepe.jpg" alt="#" class="pepe">
+                <div class="infos flexCenter">
+                    <div class="">
+                        <h1 class="username">usernameHolder</h1>
+                        <p class="firstname">firstname</p>
+                    </div>
+                    <div class="subInfos flexCenter">
+                        <p>Joined in : <span class="date">/xx/xxxx</span></p>
+                        <p>Rating : <span class="rating">xx</span></p>
+                    </div>
+                </div>
+                <img src="sourcs/Dimond.png" alt="#">
+            </div>
+            <div class="gamesStats flexCenter">
+                <p>Games Played : <span class="gamesPlayed">xx</span></p>
+                <p>Games Won : <span class="gamesWon">xx</span></p>
+                <p>Winrate : <span class="winrate">xx</span></p>
+            </div>
+        </div>
+        <div class="lowerContainer flexCenter">
+            <div class="account flexCenter">
+                <h2>Account Infos :</h2>
+                <div class="userInfos">
+                    <div class="labels flexCenter">
+                        <label for="firstname">First Name :</label>
+                        <label for="lastname">Last Name :</label>
+                        <label for="email">Email :</label>
+                        <label for="password">Password :</label>
+                    </div>
+                    <div class="inputs flexCenter">
+                        <input id="firstname" type="text" disabled>
+                        <input id="lastname" type="text" disabled>
+                        <input id="email" type="text" disabled>
+                        <input id="password" type="text" disabled>
+                    </div>
+                </div>
+                <div class="userInfosBtn flexCenter">
+                    <button class="update">update</button>
+                    <button class="save">save</button>
+                </div>
+            </div>
+            <div class="matches flexCenter">
+                <h2>Match History :</h2>
+                <div class="matchesDiv">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/main.js"></script>
+    <script src="Javascript/index.js"></script>
+    <script src="Javascript/profile.js"></script>
+</body>
+</html>

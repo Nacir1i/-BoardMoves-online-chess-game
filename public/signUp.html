@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="sourcs/knight.ico">
+</head>
+<body>
+    <script src="Javascript/verifyToken.js"></script>
+    <div class="navBar">
+        <div class="logo">
+            <img src="sourcs/knight.png" alt="/sourcs/knight.png">
+            <h1>Board <span>Moves</span></h1>
+        </div>
+        <i class="fas fa-bars"></i>
+        <ul class="navUl2">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <!-- <li><input type="text" placeholder="Search player" class="seachPlayer"></li> -->
+            <li><button class="login">Login</button></li>
+            <li><button class="signUp">Sign up</button></li>
+        </ul>
+    </div>
+    <div class="navContent hide">
+        <ul class="navUl">
+            <li><a class="about">About <i class="far fa-comment-dots"></i></a></li>
+            <li><input type="text" placeholder="Search player" class="seachPlayer"></li>
+            <li><button class="login2">Login</button></li>
+            <li><button class="signUp">Sign up</button></li>
+        </ul>
+    </div>
+    <div class="mainContent">
+        <div class="sigunUpDiv">
+            <div class="signUpForm">
+                <h2>Sign Up</h2>
+                <div class="singUpContent">
+                    <label for="sFirstName">First Name</label>
+                    <input type="text" id="sFirstName">
+                    <p class="firstnameError"></p>
+                    <label for="sLastName">Last Name</label>
+                    <input type="text" id="sLastName">
+                    <p class="lastnameError"></p>
+                    <label for="sUserName">UserName</label>
+                    <input type="text" id="sUserName">
+                    <p class="usernameError"></p>
+                    <p class="usernameSucc"></p>
+                    <label for="sPassword">Password</label>
+                    <div class="passwordDiv">
+                        <input type="password" id="sPassword">
+                        <i class="fas fa-eye-slash"></i>
+                    </div>
+                    <p class="passwordError"></p>
+                </div>
+                <button class="submit">submit</button>
+            </div>
+            <div class="instractions">
+                <p>What should your identifications contain :</p>
+                <ul>
+                    <li>Fisrt name between 5 to 15 characters</li>
+                    <li>Last name between 5 to 15 characters</li>
+                    <li>UserName must be unique</li>
+                    <li>UserName between 5 to 15 characters</li>
+                    <li>Password between 8 to 20 characters</li>
+                </ul>
+            </div>
+            <footer>
+                <div class="links">
+                    <a href="">Help |</a>
+                    <a href="">Why Join? |</a>
+                    <a href="">About |</a>
+                    <a href="">Devs |</a>
+                    <a href="">BoardMoves.com |</a>
+                    <p>© 2021</p>
+                </div>
+                <div class="icon">
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-facebook"></i>
+                </div>
+            </footer>
+        </div>
+        <div class="loginPopUp hide">
+            <div class="loginDiv">
+                <h3>Login</h3>
+                <input type="text" placeholder="Username" class="userName">
+                <p class="usernameErrorLogin"></p>
+                <input type="text" placeholder="Password" class="Password">
+                <p class="passwordErrorLogin"></p>
+                <button class="logingBtn">submit</button>
+                <p>Or <a href="signUp.html">SIGN UP !</a> </p>
+            </div>
+        </div>
+    </div>
+    <script src="Javascript/main.js"></script>
+    <script src="Javascript/signUp.js"></script>
+    <script src="Javascript/login.js"></script>
+</body>
+</html>

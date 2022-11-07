@@ -1,0 +1,531 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    min-width: 340px;
+    background-color: #1d1716;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+}
+
+:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: black;
+}
+
+.navBar {
+    background-color: #402a23;
+    display: flex;
+    height: 69px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0px 15px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.logo span, .logo h1, .logo img {
+    pointer-events: none;
+}
+
+.logo span {
+    color: #f3bc77;
+}
+
+.logo img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+.fa-bars {
+    font-size: 25px;
+    margin: 20px;
+    cursor: pointer;
+    color: #f3bc77;
+}
+
+.navContent {
+    position: fixed;
+    top: 65px;
+    right: 0;
+    height: 100%;
+    width: 125px;
+    background-color: #402a23;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: ease .3s all;
+}
+
+.navContent ul {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navContent ul li {
+    margin: 10px 0;
+}
+
+.navContent input {
+    width: 100px;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.navContent button {
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.navUl2 {
+    display: none
+}
+
+.navUl2 li {
+    margin: 0 10px;
+}
+
+.navUl2 li button {
+    padding: 7px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: 650;
+}
+
+.navUl2 input {
+    width: 100px;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.about {
+    font-weight: 900;
+}
+
+.login {
+    background-color: #1d1716;
+}
+
+.signUp {
+    background: #f3bc77;
+}
+
+.login2 {
+    background-color: #1d1716;
+}
+
+.signUp3 {
+    background: #f3bc77;
+}
+
+/* -------
+    Main content:
+*/
+.mainContent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.mainHeader {
+    margin-top: 110px;
+}
+
+.mainContent .header {
+    width: 300px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.headerContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+
+.Board {
+    font-size: 30px;
+}
+
+.Moves {
+    color: #f3bc77;
+}
+
+.currentPLayer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.fa-user-circle {
+    font-size: 55px;
+    margin-left: 10px;
+}
+
+.playOptions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.playOptions button {
+    margin: 5px 0;
+}
+
+.pvp, .bot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.pvp p, .pvp .fa-robot, .pvp span, .bot p, .bot .fa-robot, .bot span {
+    pointer-events: none;
+}
+
+.pvp {
+    background-color: #f3bc77;
+}
+
+.pvp span, .bot span {
+    margin-left: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.pvp span p, .bot span p {
+    font-size: 12px;
+}
+
+.pvp span:first-child, .bot span:first-child {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.avatar {
+    width: 40px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: grey;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a, footer p {
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+}
+
+.icon {
+    margin: 10px;
+}
+
+.icon .fab {
+    font-size: 24px;
+    margin: 0 3px;
+}
+
+/* User avatar */
+.userAvatar {
+    cursor: pointer;
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.userAvatar img {
+    width: 45px;
+}
+
+/* Login pop up */
+.loginPopUp {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loginDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 224px;
+    height: 205px;
+    background-color: #f3bc77;
+    padding: 20px;
+    border-radius: 4px;
+    color: black;
+}
+
+.loginDiv input {
+    margin: 10px 0;
+    width: 180px;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.logingBtn {
+    background-color: #402a23;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 5px 0;
+}
+
+.loginDiv p, .loginDiv a {
+    font-size: 12px;
+}
+
+.hide {
+    display: none;
+}
+
+/* sing up */
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 370px;
+    margin-top: 100px;
+    background-color: #f3bc77;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.singUpContent {
+    border-top: solid black 2px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.singUpContent input {
+    margin: 5px 0;
+    border: none;
+    color: black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.singUpContent label {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.usernameError, .passwordError, .firstnameError, .lastnameError, .usernameErrorLogin, .passwordErrorLogin {
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.singUpContent .usernameSucc {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.passwordDiv {
+    display: flex;
+    align-items: center;
+}
+
+.passwordDiv input {
+    border-radius: 3px 0 0 3px;
+    height: 28px;
+    width: 205px;
+}
+
+.fa-eye-slash, .fa-eye {
+    background-color: white;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 0 3px 3px 0;
+}
+
+.submit {
+    background-color: #402a23;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.chessImg {
+    display: none;
+}
+
+.sigunUpDiv {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logOutDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 25px;
+    font-size: 28px;
+    cursor: pointer;
+    color: red;
+}
+
+.instractions {
+    margin-top: 20px;
+}
+
+.instractions ul {
+    margin-top: 10px;
+}
+
+.instractions ul li{
+    list-style: circle;
+    margin-left: 40px;
+}
+
+/* Ipad dimensions */
+@media (min-width: 600px) {
+    .chessImg {
+        display: block;
+        width: 250px;
+    }
+
+    .mainHeader {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (min-width: 794px) {
+    body {
+        background-image: url("sourcs/background.jpg");
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .mainContent {
+        background-color: #1d1716;
+        width: 960px;
+    }
+    
+    .headerContent {
+        font-size: 20px;
+    }
+    
+    .chessImg {
+        width: 300px;
+    }
+    
+    .playOptions button{
+        font-size: 20px;
+        height: 60px;  
+    }
+    
+    .navUl2 {
+        display: flex;
+        align-items: center;
+        margin: 20px;
+    }
+    
+    .fa-bars {
+        display: none;
+    }
+    
+    .signUpForm {
+        margin-top: 0;
+    }
+    
+    .sigunUpDiv {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1366px) {
+    .accountInfo img {
+        width: 80px;
+    }
+
+    .matches, .account {
+        height: 450px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .matches, .account {
+        height: 600px;
+    }
+}

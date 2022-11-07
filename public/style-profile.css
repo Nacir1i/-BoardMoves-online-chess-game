@@ -1,0 +1,209 @@
+/* Utility classes : */
+.flexCenter {
+    display: flex;
+}
+
+p {
+    font-size: 20px;
+}
+
+.mainProfileContainer {
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #1D1716;
+}
+
+.upperContainer {
+    align-items: center;
+    justify-content: center;
+    width: 786px;
+    background-color: #2D2424;
+    border-radius: 8px 8px 0 0;
+}
+
+.lowerContainer {
+    width: 786px;
+}
+
+.accountInfo{
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0;
+}
+
+.infos {
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.subInfos {
+    justify-content: space-between;
+}
+
+.accountInfo img {
+    width: 100px;
+}
+
+.pepe {
+    border-radius: 4px;
+}
+
+.gamesStats {
+    justify-content: space-around;
+    align-items: center;
+    background-color: #5C3D2E;
+    width: 786px;
+    height: 49px;
+}
+
+.username {
+    font-size: 32px;
+}
+
+.firstname {
+    font-size: 16px;
+}
+
+.account {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 55%;
+    height: 636px;
+    padding: 20px;
+    background-color: #F3BC77;
+}
+
+.account h2 {
+    color: black;
+}
+
+.matches {
+    overflow: scroll;
+    overflow-x: hidden;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 45%;
+    height: 636px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 0px;
+    padding-left: 10px;
+    background-color: #392D27;
+}
+
+.userInfos {
+    margin-top: 50px;
+    display: flex;
+}
+
+.labels, .inputs {
+    flex-direction: column;
+}
+
+.inputs input {
+    margin-top: 24px;
+    margin-left: 20px;
+    padding: 10px;
+    height: 33px;
+    width: 189px;
+    border: none;
+    border-radius: 4px;
+}
+
+.labels label {
+    color: black;
+    font-size: 20px;
+    margin-top: 37px;
+}
+
+.inputs input:first-child{
+    margin: 0;
+    margin-left: 20px;
+}
+
+.labels label:first-child {
+    margin-top: 5px;
+}
+
+.userInfosBtn {
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 70%;
+}
+
+.userInfosBtn button {
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    padding: 10px;
+    width: 105px;
+    height: 41px;
+    border: none;
+    border-radius: 4px;
+}
+
+.update {
+    background-color: #082032;
+}
+
+.save {
+    background-color: #334756;
+}
+
+.newMatch {
+    align-items: center;
+    justify-content: space-between;
+    background-color: #826F66;
+    margin: 10px 0;
+    width: 315px;
+    height: 45px;
+    border-radius: 4px;
+}
+
+.macthPlayers {
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.result {
+    background-color: #1D1716;
+    width: 45px;
+    height: 45px;
+    border-radius: 0 4px 4px 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f100;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #be8d50;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9b6f3b;
+}
+
+.result {
+    align-items: center;
+    justify-content: center;
+}
+
+.vs {
+    width: 32px;
+}
+
+.res {
+    width: 20px;
+}
